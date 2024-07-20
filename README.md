@@ -1,13 +1,11 @@
-# Sample Hardhat Project
+# Hardhat Upgradable Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+## ENV setups
 
-Try running some of the following tasks:
+To compile and test the contracts, you need to set up the following environment variables in .env file:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+ETHERSCAN_API_KEY=YOUR_ETHERSCAN_API_KEY
+SEPOLIA_PRIVATE_KEY=YOUR_SEPOLIA_PRIVATE_KEY (dangerous and need to be carefully secured)
+ALCHEMY_SEPOLIA_URL=YOUR_ALCHEMY_SEPOLIA_URL
 ```
