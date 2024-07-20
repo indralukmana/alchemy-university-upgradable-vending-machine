@@ -7,7 +7,7 @@ async function main() {
   await proxy.waitForDeployment();
   const proxyAddressString = await proxy.getAddress();
 
-  console.log("VendingMachineV1 deployed to:", proxyAddressString);
+  console.log("VendingMachineV1 (proxy) deployed to:", proxyAddressString);
 
   const implementationAddress = await upgrades.erc1967.getImplementationAddress(
     proxyAddressString
